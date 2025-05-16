@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Invitación Civil - Narciso y Loida</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- PORTADA -->
+<header class="hero">
+  <div class="intro">
+    <h1>
+      <span class="nombres">Narciso</span>
+      <span class="amp">&</span>
+      <span class="nombres">Loida</span>
+    </h1>
+    <p class="subtitulo">¡Nuestra boda civil!</p>
+  </div>
+
+    <audio id="miAudio" loop>
+      <source src="David Bisbal - Me Enamoré De Ti.mp3" type="audio/mpeg" />
+      Tu navegador no soporta audio HTML5.
+    </audio>
+
+  <!-- BOTÓN DE AUDIO PERSONALIZADO -->
+    <label class="container">
+      <input type="checkbox" id="toggleMusica" onchange="toggleMusica()">
+      <svg class="mute" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><path d="M215 71c7.5-6.4 17.9-7.9 26.7-3.8S256 79.6 256 89V423c0 9.4-5.5 17.9-14.3 21.8s-19.2 2.6-26.7-3.8L107.8 320H24c-13.3 0-24-10.7-24-24V216c0-13.3 10.7-24 24-24H107.8L215 71zM304.3 150.3l41.4 41.4 34.3-34.3c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6L368.4 214.3l41.4 41.4c6.2 6.2 6.2 16.4 0 22.6s-16.4 6.2-22.6 0L345.7 236.9l-41.4 41.4c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l41.4-41.4-41.4-41.4c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0z"/></svg>
+      <svg class="voice" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><path d="M215 71c7.5-6.4 17.9-7.9 26.7-3.8S256 79.6 256 89V423c0 9.4-5.5 17.9-14.3 21.8s-19.2 2.6-26.7-3.8L107.8 320H24c-13.3 0-24-10.7-24-24V216c0-13.3 10.7-24 24-24H107.8L215 71zM314.8 97.2c6.6-5.8 16.6-5.1 22.4 1.5C375.2 139 400 194.7 400 256s-24.8 117-62.8 157.3c-5.8 6.6-15.8 7.3-22.4 1.5s-7.3-15.8-1.5-22.4C345.5 359.4 368 310.2 368 256s-22.5-103.4-54.8-136.8c-5.8-6.6-5.1-16.6 1.5-22.4z"/></svg>
+    </label>
+
+    <script>
+      const audio = document.getElementById('miAudio');
+      const checkbox = document.getElementById('toggleMusica');
+      function toggleMusica() {
+        checkbox.checked ? audio.play() : audio.pause();
+      }
+    </script>
+  </header>
+
+  <!-- INVITACIÓN -->
+  <section id="invitacion" class="seccion">
+    <h2>Con mucho cariño, queremos invitarte a nuestra ceremonia civil</h2>
+    <p><strong>Fecha:</strong> 29 de mayo de 2025</p>
+    <p><strong>Hora:</strong> 2:00 PM</p>
+    <p><strong>Lugar:</strong> Casa de la familia Lizaola</p>
+    <p><strong>Código de vestimenta:</strong> Informal</p>
+    <a href="https://www.google.com/maps/place/17%C2%B057'47.0%22N+93%C2%B001'19.3%22W/@17.9630027,-93.022008,3a,75y,229.69h,82.13t/data=!3m7!1e1!3m5!1scjvGw32m8b8f8wWA8AyFPA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D7.867970467308453%26panoid%3DcjvGw32m8b8f8wWA8AyFPA%26yaw%3D229.6869843546667!7i16384!8i8192!4m4!3m3!8m2!3d17.9630566!4d-93.0220184?hl=es&entry=ttu&g_ep=EgoyMDI1MDUxMy4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" target="_blank">(Ver ubicación)</a>
+    <img src="foto salon.png" alt="Foto del lugar" />
+  </section>
+
+  <!-- DETALLES -->
+  <section class="seccion">
+    <h2>¿Qué puedes esperar?</h2>
+    <p>Una tarde íntima, sencilla y llena de cariño con nuestros seres más cercanos. Habrá una pequeña cena y momentos para compartir.</p>
+    <img src="foto 1.jpg" alt="Momentos familiares" />
+  </section>
+
+  <!-- CONFIRMACIÓN -->
+  <section id="confirmacion" class="seccion">
+    <h2>¿Nos acompañas?</h2>
+    <p>Por favor confírmanos tu asistencia para poder esperarte con gusto.</p>
+    <img src="foto2.jpg" alt="Foto confirmación" />
+    <a 
+      href="https://wa.me/5219931025203?text=Hola,%20confirmo%20mi%20asistencia%20a%20su%20boda%20civil.%20¡Con gusto estaré ahí!" 
+      target="_blank" 
+      class="btn-whatsapp">
+      Confirmar asistencia
+    </a>
+    <br />
+    <a 
+      href="https://wa.me/5219931025203?text=Hola,%20lamentablemente%20no%20podré%20asistir%20a%20su%20boda%20civil.%20¡Les%20mando%20un%20abrazo!" 
+      target="_blank" 
+      class="btn-whatsapp no-asistir">
+      No podré asistir
+    </a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2025 Narciso & Loida. Gracias por acompañarnos en este momento tan especial.</p>
+  </footer>
+
+</body>
+</html>
